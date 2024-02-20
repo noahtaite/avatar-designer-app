@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Avatar Designer</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <h1 class="title">Avatar Designer</h1>
+    <p>
+      Try changing the avatar options below.
+    </p>
+    <div class="container">
+      <img id="avatar" src="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg" alt="Avatar"/>
+    </div>
+    <div class="container">
+        <button class="btn" id="button1" data-img="https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg">Image 1</button>
+        <button class="btn" id="button2" data-img="https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg">Image 2</button>
+        <button class="btn" id="button3" data-img="https://img.freepik.com/free-photo/3d-cartoon-style-character_23-2151034097.jpg">Image 3</button>
+    </div>
+    <div class="container">
+        <div class="input_container">
+          <input id="fileInput" type="file" accept="image/png, image/jpeg"/>
+        </div>
+    </div>
+    <div class="container">
+      <p>Adjust border radius:</p>
+      <input id="slider" type="range" />
+      <p>Choose border color:</p>
+      <input id="picker" type="color" />
+    </div>
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>
